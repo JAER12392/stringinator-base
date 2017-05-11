@@ -2,18 +2,20 @@ const _ = require('../../underbar');
 
 describe('identity()', () => {
   it('returns null if given null', () => {
-    // Your code goes here
+    expect(_.identity(null)).toBe(null);
   });
 
   it('returns the number if given a number', () => {
-    // Your code goes here
+    expect(_.identity(9)).toBe(9);
   });
 
   it('returns the same array if given an array', () => {
-    // Your code goes here
+    var zeus = ['Z', 'e', 'u', 's'];
+    expect(_.identity(zeus)).toBe(zeus);
   });
 
   it('returns the same object if given an object', () => {
-    // Your code goes here
+    const obj = {a : 'hello'};
+    expect(_.identity(obj)).toBe(obj);
   });
 });
